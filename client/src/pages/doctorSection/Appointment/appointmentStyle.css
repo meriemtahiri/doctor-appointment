@@ -1,0 +1,104 @@
+
+.table__body {
+    width: 95%;
+    max-height: calc(89% - 1.6rem);
+    margin: .8rem auto;
+    font-size:15px;
+}
+
+table {
+    width: 100%;
+}
+
+td img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 5rem;
+
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    left: 0;
+    text-transform: capitalize;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #0000000b;
+}
+
+tbody tr {
+    --delay: .1s;
+    transition: .5s ease-in-out var(--delay), background-color 0s;
+}
+
+.Pending {
+    background-color: #86c2e4;
+    color: #002b6b;
+    cursor: pointer;
+    padding: .4rem 0;
+    border-radius: 2rem;
+    text-align: center;
+}
+.Confirmed {
+    background-color: #86e49d;
+    color: #006b21;
+    cursor: pointer;
+    padding: .4rem 0;
+    border-radius: 2rem;
+    text-align: center;
+}
+.Cancelled {
+    background-color: #e4a886;
+    color: #6b2700;
+    cursor: pointer;
+    padding: .4rem 0;
+    border-radius: 2rem;
+    text-align: center;
+}
+.delete {
+    background-color: #e4a886;
+    color: #6b2700;
+    cursor: pointer;
+    padding: .4rem 0;
+    border-radius: 2rem;
+    text-align: center;
+}
+.send {
+    background-color: #86c2e4;
+    color: #002b6b;
+    cursor: pointer;
+    padding: .4rem 0;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+
+
+@media (max-width: 1000px) {
+    td:not(:first-of-type) {
+        min-width: 12.1rem;
+    }
+}
+
+thead th span.icon-arrow {
+    display: inline-block;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    border: 1.4px solid transparent;
+    text-align: center;
+    font-size: 1rem;
+    margin-left: .5rem;
+    transition: .2s ease-in-out;
+}
+
