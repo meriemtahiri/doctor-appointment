@@ -54,15 +54,7 @@ export default function Signup() {
             />
             Patient
           </label>
-          <label>
-            <input
-              type="radio"
-              value="admin"
-              checked={role === 'admin'}
-              onChange={(e) => setRole(e.target.value)}
-            />
-            Admin
-          </label>
+          
                 <input type="submit" value="Sign Up" />
                 {error && <p className='err'>{error}</p>}
             </form>
